@@ -6,10 +6,10 @@ const Home: React.FC = () => {
     <div className="home-page container-wide">
       <section className="hero-section">
         <div className="profile-image-container">
-          <img src="/path/to/your/profile-picture.jpg" alt="Your Name" className="profile-image" />
+          <img src="/assets/images/profilepicture.jpg" alt="Hung Huynh Software Engineer" className="profile-image" loading="lazy"/>
         </div>
         <div className="hero-content">
-          <h1 className="hero-title">Your Name</h1>
+          <h1 className="hero-title">Hung Huynh</h1>
           <h2 className="hero-subtitle">Software Engineer</h2>
           <p className="hero-description">
             A brief introduction about yourself and your expertise as a software engineer.

@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send the form data to a server
-    console.log('Form submitted:', { name, email, message });
+    console.log('Form submitted:', { name, company, email, message });
     // Reset form fields
     setName('');
+    setCompany('');
     setEmail('');
     setMessage('');
   };
@@ -26,6 +28,17 @@ const Contact: React.FC = () => {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
+            className="form-input"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="company" className="form-label">Company</label>
+          <input
+            type="text"
+            id="company"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
             required
             className="form-input"
           />

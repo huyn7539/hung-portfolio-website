@@ -1,0 +1,76 @@
+/* layouts/grid.css */
+.grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  /* Basic grid layouts */
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Auto-fit grid */
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  /* Grid areas template */
+  .grid-areas {
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "footer footer footer";
+  }
+  
+  /* Responsive grids */
+  @media (max-width: 1024px) {
+    .grid-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-3, .grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-2, .grid-3, .grid-4 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Grid alignment utilities */
+  .grid-center {
+    place-items: center;
+  }
+  
+  .grid-start {
+    place-items: start;
+  }
+  
+  .grid-end {
+    place-items: end;
+  }
+  
+  /* Grid gap utilities */
+  .gap-sm {
+    gap: 0.5rem;
+  }
+  
+  .gap-md {
+    gap: 1rem;
+  }
+  
+  .gap-lg {
+    gap: 2rem;
+  }

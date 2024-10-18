@@ -1,0 +1,233 @@
+/* Base footer styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    color: #333;
+    width: 100%;
+  }
+  
+  /* Footer container */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Footer with grid layout */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Footer sections */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer links */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-link {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: #333;
+  }
+  
+  /* Social media section */
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  .social-icon:hover {
+    color: #333;
+  }
+  
+  /* Newsletter form */
+  .footer-newsletter {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .footer-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+  
+  .footer-button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .footer-button:hover {
+    background-color: #444;
+  }
+  
+  /* Bottom footer */
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Footer variants */
+  
+  /* Dark theme */
+  .footer-dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer-dark .footer-link {
+    color: #ddd;
+  }
+  
+  .footer-dark .footer-link:hover {
+    color: #fff;
+  }
+  
+  .footer-dark .social-icon {
+    color: #ddd;
+  }
+  
+  .footer-dark .social-icon:hover {
+    color: #fff;
+  }
+  
+  .footer-dark .footer-bottom {
+    border-top-color: #444;
+    color: #ddd;
+  }
+  
+  /* Simple footer */
+  .footer-simple {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Sticky footer */
+  .footer-sticky {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-newsletter {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  
+  /* Footer with logo */
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Footer with contact info */
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+  }
+  
+  /* Footer with language selector */
+  .footer-language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Footer with back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
